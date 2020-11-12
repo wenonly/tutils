@@ -1,0 +1,1 @@
+{"version":3,"file":"bundle.cjs.js","sources":["../modules/foo.ts"],"sourcesContent":["// src/foo.js\nconst str: string = 'hello world'\n\nexport default str;"],"names":[],"mappings":";;;;AAAA;IACM,GAAG,GAAW;;;;"}
