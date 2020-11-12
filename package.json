@@ -1,0 +1,16 @@
+{
+  "name": "tutils",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "bundle": "rollup --config"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "rollup": "^2.33.1",
+    "rollup-plugin-json": "^4.0.0"
+  }
+}
