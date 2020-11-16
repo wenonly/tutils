@@ -1,2 +1,2 @@
 
-export { default as foo } from './foo.js';
+export { default as debounce } from './debounce';
