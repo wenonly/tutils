@@ -1,5 +1,5 @@
 // src/debounce.ts
-const debounce = (fn, delay, options: { immediate: boolean } = {
+const debounce = (fn: (...args: any[]) => void, delay: number, options: { immediate: boolean } = {
     immediate: false
 }) => {
   let timer = null;
