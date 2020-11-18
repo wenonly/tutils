@@ -6,7 +6,7 @@
   "scripts": {
     "build": "rollup --config",
     "test": "jest --no-cache",
-    "doc": "typedoc --out docs modules"
+    "doc": "typedoc --options typedoc.json"
   },
   "keywords": [],
   "author": "",
