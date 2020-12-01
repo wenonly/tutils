@@ -1,17 +1,15 @@
 /**
  * 防抖函数
  * @param fn 传入回调函数
- * @param delay 延时时间戳
- * @param options 使用配置
- * 
+ * @param wait 延时时间戳
+ * @param immediate 为true代表立即执行
+ *
  * @category 函数
  */
 function debounce(
   fn: (...args: any[]) => void,
-  delay: number,
-  options: { immediate: boolean } = {
-    immediate: false,
-  }
+  wait: number,
+  immediate: boolean = false
 ) {
   let timer = null;
   return function () {
@@ -19,12 +17,12 @@ function debounce(
     const args = arguments;
 
     // 立即执行
-    if (options.immediate) {
+    if (immediate) {
       // 第一次timer为null，则可以执行，一定时间内timer始终不为null
       const dos = !timer;
       timer = setTimeout(() => {
         timer = null;
-      }, delay);
+      }, wait);
       if (dos) {
         fn.apply(context, args);
       }
@@ -32,7 +30,7 @@ function debounce(
       clearTimeout(timer);
       timer = setTimeout(() => {
         fn.apply(context, args);
-      }, delay);
+      }, wait);
     }
   };
 }
