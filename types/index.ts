@@ -21,3 +21,11 @@ export type Throttle = (
 export type Clone = (
   obj: any[] | { [key: string]: any }
 ) => any[] | { [key: string]: any };
+
+/**
+ * 深拷贝
+ */
+export type CloneDeep = (
+  obj: any[] | { [key: string]: any },
+  map?: WeakMap<any, any>
+) => any[] | { [key: string]: any };
