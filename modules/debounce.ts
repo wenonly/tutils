@@ -1,3 +1,5 @@
+import { Debounce } from "../types";
+
 /**
  * 防抖函数
  * @param fn 传入回调函数
@@ -6,11 +8,7 @@
  *
  * @category 函数
  */
-function debounce(
-  fn: (...args: any[]) => void,
-  wait: number,
-  immediate: boolean = false
-) {
+const debounce: Debounce = (fn, wait, immediate) => {
   let timer = null;
   return function () {
     const context = this;
@@ -33,6 +31,6 @@ function debounce(
       }, wait);
     }
   };
-}
+};
 
 export default debounce;
