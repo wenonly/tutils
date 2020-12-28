@@ -7,5 +7,5 @@ es 模块可按需引入
 # 安装使用
 
 ```shell
-npm install @iwowen/utils@1.0.0 --registry=https://npm.pkg.github.com/
+npm install @iwowen/utils --registry=https://npm.pkg.github.com/
 ```
