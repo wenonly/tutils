@@ -1,4 +1,4 @@
-import { Debounce } from "../types";
+import { Debounce } from "../types/index";
 
 /**
  * 防抖函数
@@ -9,10 +9,10 @@ import { Debounce } from "../types";
  * @category 函数
  */
 const debounce: Debounce = (fn, wait, immediate) => {
-  let timer = null;
+  let timer: any = null;
   return function () {
     const context = this;
-    const args = arguments;
+    const args: any = arguments;
 
     // 立即执行
     if (immediate) {

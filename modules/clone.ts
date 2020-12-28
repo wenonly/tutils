@@ -1,12 +1,12 @@
-import { Clone } from "../types";
+import { Clone } from "../types/index";
 
 /**
  * 浅拷贝
  * @param obj 需拷贝到对象
  */
-const clone: Clone = (obj) => {
+const clone: Clone = (obj: any) => {
   if (isObject(obj)) {
-    const newObj = obj instanceof Array ? [] : {};
+    const newObj: any = obj instanceof Array ? [] : {};
     for (const key in obj) {
       newObj[key] = obj[key];
     }
@@ -16,7 +16,7 @@ const clone: Clone = (obj) => {
   }
 };
 
-function isObject(target) {
+function isObject(target: any) {
   const type = typeof target;
   return target !== null && (type === "object" || type === "function");
 }

@@ -1,4 +1,4 @@
-import { CloneDeep } from "../types";
+import { CloneDeep } from "../types/index";
 
 /**
  * 浅拷贝
@@ -6,7 +6,7 @@ import { CloneDeep } from "../types";
  */
 const cloneDeep: CloneDeep = (obj, map = new WeakMap()) => {
   if (isObject(obj)) {
-    const newObj = obj instanceof Array ? [] : {};
+    const newObj: any = obj instanceof Array ? [] : {};
     if (map.get(obj)) {
       return obj;
     }
@@ -20,7 +20,7 @@ const cloneDeep: CloneDeep = (obj, map = new WeakMap()) => {
   }
 };
 
-function isObject(target) {
+function isObject(target: any) {
   const type = typeof target;
   return target !== null && (type === "object" || type === "function");
 }
