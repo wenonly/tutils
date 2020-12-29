@@ -1,6 +1,6 @@
 {
   "name": "@iwowen/utils",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "tutils 简易函数库, 封装一些适用的工具函数。",
   "main": "lib/bundle.esm.js",
   "scripts": {
