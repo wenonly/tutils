@@ -1,8 +1,10 @@
 {
   "name": "@iwowen/utils",
-  "version": "1.0.2",
-  "description": "tutils 简易函数库, 封装一些适用的工具函数。",
-  "main": "lib/bundle.esm.js",
+  "version": "1.0.3",
+  "description": "utils 简易函数库, 封装一些适用的工具函数。",
+  "main": "lib/main.umd.js",
+  "module": "lib/main.esm.js",
+  "typings": "lib/types/modules/index.d.ts",
   "scripts": {
     "build": "rollup --config",
     "test": "jest --no-cache",
