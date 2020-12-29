@@ -5,11 +5,6 @@
 # 安装使用
 
 ```shell
-// github
-npm install @iwowen/utils --registry=https://npm.pkg.github.com/
-```
-
-```shell
 // npm
 npm install @iwowen/utils
 ```
