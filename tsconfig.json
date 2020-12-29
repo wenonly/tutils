@@ -13,7 +13,8 @@
         "declarationDir": "lib/types",
         "typeRoots": [
             "node_modules/@types"
-        ]
+        ],
+        "moduleResolution": "node"
     },
     "exclude": [
         "./test",
