@@ -14,10 +14,12 @@
         "typeRoots": [
             "node_modules/@types"
         ],
-        "moduleResolution": "node"
+        "moduleResolution": "node",
+        "esModuleInterop": true,
     },
     "exclude": [
         "./test",
         "./lib",
+        "node_modules/",
     ]
 }
