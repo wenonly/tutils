@@ -9,12 +9,8 @@ export declare type Throttle = (fn: (...args: any[]) => void, wait: number) => (
 /**
  * 钱拷贝
  */
-export declare type Clone = (obj: any) => any[] | {
-    [key: string]: any;
-};
+export declare type Clone = (obj: any) => any;
 /**
  * 深拷贝
  */
-export declare type CloneDeep = (obj: any, map?: WeakMap<any, any>) => any[] | {
-    [key: string]: any;
-};
+export declare type CloneDeep = (obj: any, map?: WeakMap<any, any>) => any;
