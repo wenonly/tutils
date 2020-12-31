@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>modules/dateToString | @iwowen/utils</title>
+	<title>modules/filterRichLabel | @iwowen/utils</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -55,7 +55,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="_modules_datetostring_.html">modules/dateToString</a>
+					<a href="_modules_filterrichlabel_.html">modules/filterRichLabel</a>
 				</li>
 			</ul>
 		</div>
@@ -78,13 +78,13 @@
 					<li class=" tsd-kind-module">
 						<a href="_modules_clonedeep_.html">modules/cloneDeep</a>
 					</li>
-					<li class="current tsd-kind-module">
+					<li class=" tsd-kind-module">
 						<a href="_modules_datetostring_.html">modules/dateToString</a>
 					</li>
 					<li class=" tsd-kind-module">
 						<a href="_modules_debounce_.html">modules/debounce</a>
 					</li>
-					<li class=" tsd-kind-module">
+					<li class="current tsd-kind-module">
 						<a href="_modules_filterrichlabel_.html">modules/filterRichLabel</a>
 					</li>
 					<li class=" tsd-kind-module">
@@ -100,15 +100,14 @@
 			</nav>
 		</div>
 		<div class="col-7 offset-3 col-content">
-			<h1>Module modules/dateToString</h1>
+			<h1>Module modules/filterRichLabel</h1>
 			<section class="tsd-panel-group tsd-index-group">
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="_modules_datetostring_.html#numto2" class="tsd-kind-icon">NumTo2</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_modules_datetostring_.html#datetostring" class="tsd-kind-icon">dateToString</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_modules_filterrichlabel_.html#filterrichlabel" class="tsd-kind-icon">filterRichLabel</a></li>
 							</ul>
 						</section>
 					</div>
@@ -116,69 +115,28 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
-					<a name="numto2" class="tsd-anchor"></a>
-					<h3>Num<wbr>To2</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">Num<wbr>To2<span class="tsd-signature-symbol">(</span>num<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in modules/dateToString.ts:30</li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography tsd-comment-shorttext">
-								<div class="lead">
-									<p>个位数转两位数，第一位补0</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>num: <span class="tsd-signature-type">number</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
-						</li>
-					</ul>
-				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-					<a name="datetostring" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> date<wbr>ToString</h3>
+					<a name="filterrichlabel" class="tsd-anchor"></a>
+					<h3>filter<wbr>Rich<wbr>Label</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">date<wbr>ToString<span class="tsd-signature-symbol">(</span>d<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span>, str<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+						<li class="tsd-signature tsd-kind-icon">filter<wbr>Rich<wbr>Label<span class="tsd-signature-symbol">(</span>schemeIntroduce<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in modules/dateToString.ts:6</li>
+									<li>Defined in modules/filterRichLabel.ts:4</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography tsd-comment-shorttext">
 								<div class="lead">
-									<p>格式化时间</p>
+									<p>去掉富文本中的html标签</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>d: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography tsd-comment-shorttext">
-										<div class="lead">
-											<p>时间戳或者Date</p>
-										</div>
-									</div>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> str: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;YYYY-MM-dd HH:mm:ss&quot;</span></h5>
-									<div class="tsd-comment tsd-typography tsd-comment-shorttext">
-										<div class="lead">
-											<p>YYYY-MM-dd HH:mm:ss</p>
-										</div>
-									</div>
+									<h5>schemeIntroduce: <span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -191,11 +149,8 @@
 		<div class="col-2 col-menu secondary-menu">
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported root">
-						<a href="_modules_datetostring_.html#numto2" class="tsd-kind-icon">Num<wbr>To2</a>
-					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module root">
-						<a href="_modules_datetostring_.html#datetostring" class="tsd-kind-icon">date<wbr>ToString</a>
+						<a href="_modules_filterrichlabel_.html#filterrichlabel" class="tsd-kind-icon">filter<wbr>Rich<wbr>Label</a>
 					</li>
 				</ul>
 			</nav>
