@@ -1,4 +1,5 @@
 import { Clone } from "../types/index";
+import isObject from "./isObject";
 
 /**
  * 浅拷贝
@@ -15,10 +16,5 @@ const clone: Clone = (obj: any) => {
     return obj;
   }
 };
-
-function isObject(target: any) {
-  const type = typeof target;
-  return target !== null && (type === "object" || type === "function");
-}
 
 export default clone;
